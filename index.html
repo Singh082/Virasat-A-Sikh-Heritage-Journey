@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Virasat</title>
+    <link rel="icon" type="image/png" href="images/Nishaansahib.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">
+            <h1>Virasat</h1>
+            <h6>A Sikh Heritage Journey</h6>
+        </div>
+        <nav class="navigation">
+            <a href="#home" class="active">Home</a>
+            <a href="#map">Map</a>
+            <a href="#featured">Explore</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <!--Main Content-->
+    <main>
+        <section class="map-section" id="home">
+            <div class="map-introduction">
+
+                <p class="eyebrow">
+                    EXPLORE THE LEGACY
+                </p>
+
+                <h1>
+                    Historical<br>
+                    Gurdwaras<br>
+                    of the World
+                </h1>
+
+                <p class="intro-text">
+                    Explore historic Gurdwaras across India and Pakistan.
+                    Select a location on the map to discover its history,
+                    significance and heritage.
+                </p>
+
+                <button
+                    class="explore-button"
+                    id="startExploring"
+                    type="button">
+                    Start Exploring ->
+                </button>
+
+            </div>
+
+           <!--Interactive Map-->
+            <div class="interactive-map" id="map">
+
+                <img
+                    src="images/map.jpg"
+                    alt="Map of India and Pakistan"
+                    class="map-image"
+                    id="mapImage">
+
+                <!--Hemkund Sahib-->
+                <button
+                    class="map-marker hemkund-sahib"
+                    data-gurdwara="hemkundSahib"
+                    type="button">
+
+                    <img
+                        class="marker-image"
+                        src="images/hemkund-sahib.jpg"
+                        alt="Gurdwara Hemkund Sahib">
+
+                    <span class="marker-label">
+                        Gurdwara Hemkund Sahib
+                        <small>Uttarakhand, India</small>
+                    </span>
+                </button>
+
+                <!--Golden Temple-->
+                <button
+                    class="map-marker golden-temple"
+                    data-gurdwara="goldenTemple"
+                    type="button">
+
+                    <img
+                        class="marker-image"
+                        src="images/golden-temple.jpg"
+                        alt="Sri Harmandir Sahib">
+
+                    <span class="marker-label">
+                        Sri Harmandir Sahib
+                        <small>Amritsar, India</small>
+                    </span>
+                </button>
+
+                <!--Kesgarh Sahib-->
+                <button
+                    class="map-marker kesgarh-sahib"
+                    data-gurdwara="kesgarhSahib"
+                    type="button">
+                    <img
+                        class="marker-image"
+                        src="images/kesgarh-sahib.jpg"
+                        alt="Takht Kesgarh Sahib">
+
+                    <span class="marker-label">
+                        Takht Kesgarh Sahib
+                        <small>Anandpur Sahib, India</small>
+                    </span>
+                </button>
+
+                <!--Dukh Niwaran Sahib-->
+                <button
+                    class="map-marker dukh-niwaran-sahib"
+                    data-gurdwara="dukhNiwaranSahib"
+                    type="button">
+                    <img
+                        class="marker-image"
+                        src="images/dukh-niwaran-sahib.jpg"
+                        alt="Gurdwara Dukh Niwaran Sahib">
+
+                    <span class="marker-label">
+                        Gurdwara Dukh Niwaran Sahib
+                        <small>Patiala, India</small>
+                    </span>
+                </button>
+
+                <!--Damdama Sahib-->
+                <button
+                    class="map-marker damdama-sahib"
+                    data-gurdwara="damdamaSahib"
+                    type="button">
+                    <img
+                        class="marker-image"
+                        src="images/damdama-sahib.jpg"
+                        alt="Takht Sri Damdama Sahib">
+                    <span class="marker-label">
+                        Takht Sri Damdama Sahib
+                        <small>Talwandi Sabo, India</small>
+                    </span>
+                </button>
+
+                <!--Panja Sahib-->
+                <button
+                    class="map-marker panja-sahib"
+                    data-gurdwara="panjaSahib"
+                    type="button">
+                    <img
+                        class="marker-image"
+                        src="images/panja-sahib.jpg"
+                        alt="Gurdwara Panja Sahib">
+                    <span class="marker-label">
+                        Gurdwara Panja Sahib
+                        <small>Hasan Abdal, Pakistan</small>
+                    </span>
+                </button>
+
+                <!--Kartarpur Sahib-->
+                <button
+                    class="map-marker kartarpur"
+                    data-gurdwara="kartarpur"
+                    type="button">
+                    <img
+                        class="marker-image"
+                        src="images/kartarpur.jpg"
+                        alt="Gurdwara Darbar Sahib Kartarpur">
+                    <span class="marker-label">
+                        Gurdwara Darbar Sahib Kartarpur
+                        <small>Kartarpur, Pakistan</small>
+                    </span>
+                </button>
+
+
+                <!--Nankana Sahib-->
+                <button
+                    class="map-marker nankana-sahib"
+                    data-gurdwara="nankanaSahib"
+                    type="button">
+                    <img
+                        class="marker-image"
+                        src="images/nankana-sahib.jpg"
+                        alt="Gurdwara Nankana Sahib">
+                    <span class="marker-label">
+                        Gurdwara Nankana Sahib
+                        <small>Nankana Sahib, Pakistan</small>
+                    </span>
+                </button>
+
+                <!--Bangla Sahib-->
+                <button
+                    class="map-marker bangla-sahib"
+                    data-gurdwara="banglaSahib"
+                    type="button">
+                    <img
+                        class="marker-image"
+                        src="images/bangla-sahib.jpg"
+                        alt="Gurdwara Bangla Sahib">
+                    <span class="marker-label">
+                        Gurdwara Bangla Sahib
+                        <small>New Delhi, India</small>
+                    </span>
+                </button>
+
+                <!--Hazur Sahib-->
+                <button
+                    class="map-marker hazur-sahib"
+                    data-gurdwara="hazurSahib"
+                    type="button">
+                    <img
+                        class="marker-image"
+                        src="images/hazur-sahib.jpg"
+                        alt="Takht Sachkhand Sri Hazur Sahib">
+                    <span class="marker-label">
+                        Takht Sachkhand Sri Hazur Sahib
+                        <small>Nanded, India</small>
+                    </span>
+                </button>
+
+                <!--Sis-Ganj Sahib-->
+                <button
+                    class="map-marker sis-ganj-sahib"
+                    data-gurdwara="sisGanjSahib"
+                    type="button">
+                    <img
+                        class="marker-image"
+                        src="images/sis-ganj-sahib.jpg"
+                        alt="Gurdwara Sis Ganj Sahib">
+                    <span class="marker-label">
+                        Gurdwara Sis Ganj Sahib
+                        <small>Delhi, India</small>
+                    </span>
+                </button>
+
+                <!--Panta Sahib-->
+                <button
+                    class="map-marker patna-sahib"
+                    data-gurdwara="patnaSahib"
+                    type="button">
+                    <img
+                        class="marker-image"
+                        src="images/patna-sahib.jpg"
+                        alt="Takht Shri Harimandir Ji Patna Sahib">
+                    <span class="marker-label">
+                        Takhat Shri Harimandir Ji Patna Sahib
+                        <small>Patna, India</small>
+                    </span>
+                </button>
+
+                <!--Singh Shaheedan-->
+                <button
+                    class="map-marker singh-shaheedan"
+                    data-gurdwara="singhShaheedan"
+                    type="button">
+                    <img
+                        class="marker-image"
+                        src="images/singh-shaheedan.jpg"
+                        alt="Gurdwara Singh Shaheedan">
+                    <span class="marker-label">
+                        Gurdwara Singh Shaheedan
+                        <small>Sohana, India</small>
+                    </span>
+
+                </button>
+            
+                <!--Fatehgarh Sahib-->
+                <button
+                    class="map-marker fatehgarh-sahib"
+                    data-gurdwara="fatehgarhSahib"
+                    type="button">
+                    <img
+                        class="marker-image"
+                        src="images/fatehgarh-sahib.jpg"
+                        alt="Gurdwara Sri Fatehgarh Sahib">
+                    <span class="marker-label">
+                        Gurdwara Sri Fatehgarh Sahib
+                        <small>Fatehgarh Sahib, India</small>
+                    </span>
+                </button>
+
+                <!--Jyoti-Saroop Sahib-->
+                <button
+                    class="map-marker jyoti-saroop-sahib"
+                    data-gurdwara="jyotiSaroopSahib"
+                    type="button">
+                    <img
+                        class="marker-image"
+                        src="images/jyoti-saroop-sahib.jpg"
+                        alt="Gurdwara Sri Jyoti Saroop Sahib">
+                    <span class="marker-label">
+                        Gurudwara Sri Jyoti Saroop Sahib
+                        <small>Fatehgarh Sahib, India</small>
+                    </span>
+                </button>
+
+                <!--Katalgarh Sahib-->
+                <button
+                    class="map-marker katalgarh-sahib"
+                    data-gurdwara="katalgarhSahib"
+                    type="button">
+                    <img
+                        class="marker-image"
+                        src="images/katalgarh-sahib.jpg"
+                        alt="Gurudwara Sri Katalgarh Sahib Ji">
+                    <span class="marker-label">
+                        Gurudwara Sri Katalgarh Sahib Ji
+                        <small>Chamkaur Sahib, India</small>
+                    </span>
+                </button>
+
+            </div>
+
+            <!--Right Information Panel-->
+            <aside class="gurdwara-panel">
+                <img
+                    id="panel-image"
+                    src="images/golden-temple.jpg"
+                    alt="Sri Harmandir Sahib">
+                <div class="panel-content">
+
+                    <p class="panel-eyebrow">
+                        SELECTED GURDWARA
+                    </p>
+
+                    <h2 id="panel-name">
+                        Sri Harmandir Sahib
+                    </h2>
+
+                    <p id="panel-location">
+                        Amritsar, Punjab, India
+                    </p>
+
+                    <div class="panel-divider"></div>
+
+                    <p id="panel-description">
+                        Select a Gurdwara on the map to discover
+                        its history, significance and heritage.
+                    </p>
+
+                    <div class="gurdwara-details">
+
+                        <div>
+                            <strong>HISTORICAL PERIOD</strong>
+                            <span id="panel-year">—</span>
+                        </div>
+
+                        <div>
+                            <strong>ASSOCIATED WITH</strong>
+                            <span id="panel-founder">—</span>
+                        </div>
+
+                        <div>
+                            <strong>LOCATION</strong>
+                            <span id="panel-place">
+                                Amritsar, Punjab, India
+                            </span>
+                        </div>
+
+                    </div>
+            </aside>
+        </section>
+        <hr>
+
+        <!--Featured Gurdwara's-->
+        <section
+            class="featured-section"
+            id="featured">
+            <div class="featured-heading">
+
+                <p class="eyebrow">
+                    DISCOVER THE HERITAGE
+                </p>
+
+                <h2>
+                    Featured Gurdwaras
+                </h2>
+
+                <p>
+                    Explore some of the most significant
+                    Gurdwaras in Sikh history.
+                </p>
+
+            </div>
+
+            <div class="featured-grid">
+
+                <!-- CARD 1 -->
+                <article
+                    class="featured-card"
+                    data-gurdwara="goldenTemple">
+
+                    <img
+                        src="images/golden-temple.jpg"
+                        alt="Sri Harmandir Sahib">
+
+                    <div class="featured-card-content">
+
+                        <h3>
+                            Sri Harmandir Sahib
+                        </h3>
+
+                        <p>
+                            Amritsar, India
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 2 -->
+                <article
+                    class="featured-card"
+                    data-gurdwara="hemkundSahib">
+
+                    <img
+                        src="images/hemkund-sahib.jpg"
+                        alt="Hemkund Sahib">
+
+                    <div class="featured-card-content">
+
+                        <h3>
+                            Hemkund Sahib
+                        </h3>
+
+                        <p>
+                            Uttarakhand, India
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 3 -->
+                <article
+                    class="featured-card"
+                    data-gurdwara="panjaSahib">
+
+                    <img
+                        src="images/panja-sahib.jpg"
+                        alt="Panja Sahib">
+
+                    <div class="featured-card-content">
+
+                        <h3>
+                            Panja Sahib
+                        </h3>
+
+                        <p>
+                            Pakistan
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 4 -->
+                <article
+                    class="featured-card"
+                    data-gurdwara="patnaSahib">
+
+                    <img
+                        src="images/patna-sahib.jpg"
+                        alt="Patna Sahib">
+
+                    <div class="featured-card-content">
+
+                        <h3>
+                            Patna Sahib
+                        </h3>
+
+                        <p>
+                            Patna, India
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 5 -->
+                <article
+                    class="featured-card"
+                    data-gurdwara="hazurSahib">
+
+                    <img
+                        src="images/hazur-sahib.jpg"
+                        alt="Hazur Sahib">
+
+                    <div class="featured-card-content">
+
+                        <h3>
+                            Hazur Sahib
+                        </h3>
+
+                        <p>
+                            Nanded, India
+                        </p>
+
+                    </div>
+                </article>
+            </div>
+        </section>
+        <hr>
+        
+        <!--ABOUT-->
+        <section
+            class="about-section"
+            id="about">
+
+            <p class="eyebrow">
+                ABOUT VIRASAT BY NISHAAN STUDIOS
+            </p>
+
+            <h2>
+                DISCOVER. LEARN. REMEMBER.
+            </h2>
+
+            <br>
+            <p>
+                Virasat is an interactive heritage experience
+                designed to help people explore important
+                Gurdwaras and learn about their historical
+                significance.
+            </p>
+
+            <p>
+                This is a proud initiative of Nishaan Studios, 
+                a Sikh heritage organization dedicated to preserving and 
+                promoting Sikh history and culture.
+            </p>
+
+            <a href="https://www.instagram.com/nishaan_studios?vrfl=cWp0bnY1amkzaTNy&utm_source=qr" target="_blank" rel="noopener noreferrer">
+  <img src="images/instagram1.png" alt="Instagram Logo" width="50" height="50">
+</a>
+
+                </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
